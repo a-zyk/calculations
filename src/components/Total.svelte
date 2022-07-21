@@ -18,11 +18,9 @@
 	{#if totalFluids}
 <div class="card">
 	Total fluids needed to maintain and replenish dehydration deficit per {$formValues.hours}hrs: 
-	{totalFluids}
+	{totalFluids} ml
 </div>
-{/if}
 
-{#if totalFluidsPerHr.length > 0}
 <div class="card">
 	Fluid rate {totalFluidsPerHr} ml/hr
 </div>
