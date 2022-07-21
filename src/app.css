@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+input[type="number"] {
+    @apply border-2 px-4 py-2 ;
+}
