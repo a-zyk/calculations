@@ -7,7 +7,7 @@
 		totalFluids as totalFluidsCalculation,
 		totalFluidsPerHr as totalFluidsPerHrCalculation,
 	} from '../stores/calculations';
-	$: maintenance = maintenanceCalculation($formValues.weight);
+	$: maintenance = maintenanceCalculation($formValues.weight, $formValues.species);
 	$: mainRates = mainRatesCalculation($formValues.maintRate, $formValues.weight);
 	$: deficit = deficitCalculation($formValues.weight, $formValues.dehydrationPercentage);
 	$: totalFluids = totalFluidsCalculation($formValues.radio, mainRates, maintenance, deficit, $formValues.hours, $formValues.ongoing)
@@ -17,12 +17,10 @@
 
 	{#if totalFluids}
 <div class="card">
-	Total fluids needed to maintain and replenish dehydration deficit per {$formValues.hours}hrs: 
-	{totalFluids} ml
-</div>
+	<p>Total fluids needed to maintain, replenish dehydration and ongoing losses deficit per {$formValues.hours} hrs: 
+	{totalFluids} ml.</p>
 
-<div class="card">
-	Fluid rate {totalFluidsPerHr} ml/hr
+	<p>Fluid rate {totalFluidsPerHr} ml/hr. </p>
 </div>
  {/if}
 

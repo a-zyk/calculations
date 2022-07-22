@@ -12,7 +12,16 @@ const deficit = (weight, dehydrationPercentage) => {
 	}
 };
 
-const maintenance = (weight) => (weight ** 0.75 * 132) / 24;
+
+const maintenance = (weight, species) => {
+    let factor
+    if (species === "dog") {
+        factor = 132 
+    } else {
+        factor = 80
+    }
+    return (weight ** 0.75 * factor) / 24
+}
 
 const totalFluids = (rateType, maintRatesCalculation, maintenanceCalculatiom, deficit, hours, ongoing) => {
 	let baseCalculation
