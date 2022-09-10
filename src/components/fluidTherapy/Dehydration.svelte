@@ -1,6 +1,6 @@
 <script>
-	import { formValues, deficit as deficitCalculation } from '../stores/calculations';
-	import Modal from './Modal.svelte';
+	import { formValues, deficit as deficitCalculation } from '../../stores/calculations';
+	import Modal from '../Modal.svelte';
 
 	$: deficit = deficitCalculation($formValues.weight, $formValues.dehydrationPercentage);
 </script>

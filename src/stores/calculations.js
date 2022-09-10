@@ -61,4 +61,14 @@ const totalFluids = (rateType, maintRatesCalculation, maintenanceCalculatiom, de
     return Math.round(total/hours)
     } 
 
-export { formValues, maintRates, deficit, maintenance, totalFluids, totalFluidsPerHr};
+    const shock = (weight, species) => {
+        let dose;
+        if (species === "dog") {
+            dose = 90;
+           
+        } else {
+            dose = 30;
+        }
+        return weight * dose
+    }
+export { formValues, maintRates, deficit, maintenance, totalFluids, totalFluidsPerHr, shock};

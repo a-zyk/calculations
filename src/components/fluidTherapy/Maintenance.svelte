@@ -3,8 +3,8 @@
 		formValues,
 		maintenance as maintenanceCalculation,
 		maintRates as mainRatesCalculation
-	} from '../stores/calculations';
-	import Modal from './Modal.svelte';
+	} from '../../stores/calculations';
+	import Modal from '../Modal.svelte';
 	$formValues.radio = 'formula';
 	$: maintenance = maintenanceCalculation($formValues.weight, $formValues.species);
 	$: maintRates = mainRatesCalculation($formValues.maintRate, $formValues.weight);
@@ -18,7 +18,7 @@
 	$: placeholder = getPlaceholder($formValues.species);
 </script>
 
-<div class="card">
+<div class="card  max-w-full">
 	<div class="flex gap-2 items-center">
 		<div>Maintenance rate</div>
 		<Modal
@@ -51,7 +51,7 @@
 			{/if}
 		</div>
 
-		<div class={$formValues.radio === 'personalRate' ? 'text-gray-800' : 'text-gray-400'}>
+		<div class={$formValues.radio === 'personalRate' ? 'text-gray-800' : 'text-gray-400'} >
 			
 				<input type="radio" name="choose" bind:group={$formValues.radio} value="personalRate" />
 				<label for="choose-rate">Choose maintenance rate yourself:</label>

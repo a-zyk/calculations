@@ -1,6 +1,6 @@
 <script>
-	import { formValues } from '../stores/calculations';
-	import Modal from './Modal.svelte';
+	import { formValues } from '../../stores/calculations';
+	import Modal from '../Modal.svelte';
 </script>
 
 <div class="card">
