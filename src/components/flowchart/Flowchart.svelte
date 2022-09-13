@@ -3,7 +3,7 @@
 	import { formValues } from '../../stores/calculations';
 	import MidazCalc from '../epilepsy/midazCalc.svelte';
 
-	const initialNodes = [
+	$: initialNodes = [
 		{
 			id: 1,
 			position: { x: 200, y: 50 },
@@ -15,7 +15,7 @@
 		{
 			id: 2,
 			position: { x: 100, y: 150 },
-			data: { label: 'helo' },
+			data: { label: `helo ${$formValues.weight}` },
 			width: 175,
 			height: 40,
 			bgColor: 'white'
@@ -54,7 +54,7 @@
 			width: 175,
 			height: 40,
 			bgColor: 'white'
-		}, 
+		},
 
 		{
 			id: 7,
@@ -88,10 +88,10 @@
 		{ id: 'e1-2', source: 1, target: 2, label: 'edge label' },
 		{ id: 'e1-3', source: 1, target: 3 },
 		{ id: 'e3-4', source: 3, target: 4 },
-		{ id: 'e5-6', source: 5 , target: 6, label: 'maintain on cri' },
-		{ id: 'e7-8', source: 7 , target: 8, label: 'naive to pheno' },
-		{ id: 'e7-9', source: 7 , target: 9, label: 'already on pheno' },
-		{ id: 'e7-9', source: 8 , target: 9, label: 'repeat doses', type: "straight", arrow: true }
+		{ id: 'e5-6', source: 5, target: 6, label: 'maintain on cri' },
+		{ id: 'e7-8', source: 7, target: 8, label: 'naive to pheno' },
+		{ id: 'e7-9', source: 7, target: 9, label: 'already on pheno' },
+		{ id: 'e7-9', source: 8, target: 9, label: 'repeat doses', type: 'straight', arrow: true }
 	];
 </script>
 

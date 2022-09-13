@@ -1,6 +1,8 @@
 <script>
 	import { formValues } from '../../stores/calculations';
 	import DrugCalc from '../drugdose.svelte';
+	import Svelvet from 'svelvet';
+	import getDrugDose from '$lib/drugDoses';
 </script>
 
 <DrugCalc
