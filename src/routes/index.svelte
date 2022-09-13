@@ -1,5 +1,5 @@
 <script>
-    import Flowchart from "../components/flowchart/flowchart.svelte";
+    import Flowchart from "../components/flowchart/Flowchart.svelte";
 </script>
 
 <Flowchart/>
