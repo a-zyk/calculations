@@ -1,7 +1,7 @@
 <script>
 	import Svelvet from 'svelvet';
 	import { formValues } from '../../stores/calculations';
-	import MidazCalc from '../epilepsy/midazCalc.svelte';
+	import MidazCalc from '../epilepsy/epilepsyDiagram.svelte';
 
 	$: initialNodes = [
 		{

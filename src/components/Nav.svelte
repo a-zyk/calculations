@@ -7,7 +7,6 @@
 		{ name: 'CHF', link: '/chf' },
 		{ name: 'ATE', link: '/ate' },
 		{ name: 'Anaphylaxis', link: '/anaphylaxis' },
-		{ name: 'flowchart', link: '/' },
 		{ name: 'Blocked cat', link: '/blockedCat' },
 		{ name: 'Eclampsia', link: '/eclampsia' },
 		{ name: 'Colapsed neonate', link: '/colapsedNeonate' }
