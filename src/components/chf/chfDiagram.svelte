@@ -137,6 +137,14 @@
         { id: '3-5', source: 3, target: 5}
 
 	];
+
+	$: edgesCat = [
+		{ id: 'e1-2', source: 1, target: 2 },
+		{ id: 'e2-3', source: 2, target: 3 },
+		{ id: 'e2-4', source: 2, target: 4, type: 'step', animate:true, noHandle:true },
+        { id: '3-5', source: 3, target: 5}
+
+	];
 </script>
 
 <Svelvet {nodes} {edges} height="750" background />
