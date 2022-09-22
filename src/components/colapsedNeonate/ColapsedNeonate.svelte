@@ -5,10 +5,7 @@
 	import Toggle from '../Toggle.svelte';
 </script>
 
-<div class="flex gap-5 p-5 ">
-	<div class="w-1/2 flex flex-col gap-2" />
 
-	<div class="w-1/2 flex flex-col gap-2">
 		<Toggle autoclosable="true">
 			<div slot="title">Failure to nurse during first 24 hrs</div>
 			<div slot="content">
@@ -121,5 +118,5 @@
 				puppies with septicemia. Deworm puppies q 2 weeks after birth, up to 8-12 weeks of age.
 			</div>
 		</Toggle>
-	</div>
-</div>
+
+		<div>Source: Fading puppy syndrome- VINcyclopedia (Associate) - Canine, March 2021. Kari Rothrock</div>

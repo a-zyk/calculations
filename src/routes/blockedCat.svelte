@@ -1,5 +1,8 @@
 <script>
-    import Blocked from "../components/blocked_cat/BlockedCat.svelte"
+	import Blocked from '../components/blocked_cat/BlockedCat.svelte';
+
 </script>
 
-<Blocked/>
+<div class="mx-16">
+		<Blocked />
+	</div>

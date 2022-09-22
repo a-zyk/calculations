@@ -85,15 +85,16 @@
 	$: nodes = [
 		{
 			id: 1,
-			position: { x: 200, y: 0 },
+			position: { x: 150, y: 0 },
 			data: { label: '<5min of continous seizure activity' },
 			width: 175,
 			height: 50,
-			bgColor: 'white'
+			bgColor: 'white',
+			borderRadius: 30
 		},
 		{
 			id: 2,
-			position: { x: 50, y: 75 },
+			position: { x: 0, y: 75 },
 			data: { label: diazepamDose },
 			width: 175,
 			height: 75,
@@ -101,7 +102,7 @@
 		},
 		{
 			id: 3,
-			position: { x: 350, y: 75 },
+			position: { x: 300, y: 75 },
 			data: { label: midazolamDose },
 			width: 175,
 			height: 75,
@@ -109,7 +110,7 @@
 		},
 		{
 			id: 4,
-			position: { x: 350, y: 175 },
+			position: { x: 300, y: 175 },
 			data: { label: midazolamCri },
 			width: 175,
 			height: 75,
@@ -118,15 +119,16 @@
 
 		{
 			id: 5,
-			position: { x: 200, y: 260 },
+			position: { x: 150, y: 260 },
 			data: { label: '<30min of continous seizure activity' },
 			width: 175,
 			height: 50,
-			bgColor: 'white'
+			bgColor: 'white',
+			borderRadius: 30
 		},
 		{
 			id: 6,
-			position: { x: 15, y: 340 },
+			position: { x: 0, y: 340 },
 			data: { label: propofolDose },
 			width: 175,
 			height: 75,
@@ -135,7 +137,7 @@
 
 		{
 			id: 7,
-			position: { x: 200, y: 340 },
+			position: { x: 180, y: 340 },
 			data: { label: levotiracetamDose },
 			width: 175,
 			height: 75,
@@ -143,15 +145,16 @@
 		},
 		{
 			id: 8,
-			position: { x: 390, y: 340 },
+			position: { x: 360, y: 340 },
 			data: { label: 'Is animal already on phenobarbital?' },
 			width: 175,
 			height: 75,
-			bgColor: 'white'
+			bgColor: 'white',
+			borderRadius: 30
 		},
 		{
 			id: 9,
-			position: { x: 15, y: 450 },
+			position: { x: 0, y: 450 },
 			data: { label: propofolCri },
 			width: 175,
 			height: 75,
@@ -160,7 +163,7 @@
 
 		{
 			id: 10,
-			position: { x: 500, y: 450 },
+			position: { x: 450, y: 450 },
 			data: { label: phenoNaive },
 			width: 95,
 			height: 125,
@@ -178,7 +181,7 @@
 
 		{
 			id: 12,
-			position: { x: 500, y: 600 },
+			position: { x: 450, y: 600 },
 			data: { label: phenoNaiveRepeat },
 			width: 95,
 			height: 125,
@@ -200,4 +203,4 @@
 	];
 </script>
 
-<Svelvet {nodes} {edges} height="750" background />
+<Svelvet {nodes} {edges} height="750" width="560" background />

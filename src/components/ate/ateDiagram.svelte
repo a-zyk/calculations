@@ -8,15 +8,16 @@
 	$: nodes = [
 		{
 			id: 1,
-			position: { x: 200, y: 0 },
+			position: { x: 100, y: 0 },
 			data: { label: 'Initial stabilisation' },
 			width: 175,
 			height: 50,
-			bgColor: 'white'
+			bgColor: 'white',
+			borderRadius: 30
 		},
 		{
 			id: 2,
-			position: { x: 200, y: 75 },
+			position: { x: 100, y: 75 },
 			data: { label: methadoneDose },
 			width: 175,
 			height: 50,
@@ -24,7 +25,7 @@
 		},
 		{
 			id: 3,
-			position: { x: 100, y: 175 },
+			position: { x: 0, y: 175 },
 			data: {
 				label: `Low molecular weight heparin ${$formValues.weight * 75} - ${
 					$formValues.weight * 150
@@ -37,7 +38,7 @@
 
 		{
 			id: 5,
-			position: { x: 300, y: 175 },
+			position: { x: 200, y: 175 },
 			data: {
 				label: `Unfractioned heparin ${$formValues.weight * 250} - ${
 					$formValues.weight * 300
@@ -49,10 +50,11 @@
 		},
 		{
 			id: 4,
-			position: { x: 400, y: 75 },
+			position: { x: 300, y: 75 },
 			data: { label: 'Asses and treat CHF' },
 			width: 175,
 			height: 50,
+			borderRadius: 30,
 			bgColor: 'white'
 		}
 	];
@@ -65,4 +67,4 @@
 	];
 </script>
 
-<Svelvet {nodes} {edges} height="500" background />
+<Svelvet {nodes} {edges} height="300" width="490" background />

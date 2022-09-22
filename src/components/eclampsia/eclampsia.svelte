@@ -4,10 +4,6 @@
 	import Toggle from '../Toggle.svelte';
 </script>
 
-<div class="flex gap-5 p-5">
-	<div class="w-1/2 flex flex-col gap-2" />
-
-	<div class="w-1/2 flex flex-col gap-2">
 		<Toggle>
 			<div slot="title">Physical Examination Findings/History</div>
 			<div slot="content">
@@ -60,5 +56,5 @@
 				closely for development of mastitis.
 			</div>
 		</Toggle>
-	</div>
-</div>
+		
+<div>Source: Eclampsia- VINcyclopedia (Associate) - Canine, November 2020. Kari Rothrock, Jacqueline Brister</div>

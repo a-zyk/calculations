@@ -84,6 +84,6 @@
 		class="hover:text-blue-400"
 		target="_blank"
 		href="https://fastvet.com/fastvet-monthly-webinar-july-2022-updated-information-on-medically-treated-canine-anaphylactic-hemoabdomen-presented-at-the-acvim-forum-2022/"
-		>Webinar from ACVIM Forum 2022 presented by Dr. Greg Lisciandro, DVM, DABVP, DACVECC</a
-	>
+		>Webinar from ACVIM Forum 2022 presented by Dr. Greg Lisciandro, DVM, DABVP, DACVECC </a
+	><div>  Steroids use are questionable as not enough proof that they help, however, using them make sense physiologically. Up to clinician to decide. </div>
 </div>

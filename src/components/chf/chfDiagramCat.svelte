@@ -2,7 +2,7 @@
 	import getDrugDose from '$lib/drugDoses';
 	import { formValues } from '../../stores/calculations';
 	import Svelvet from 'svelvet';
-	$: furosemideDose = getDrugDose(
+    $: furosemideDose = getDrugDose(
 		'Furosemide',
 		1,
 		2,
@@ -22,15 +22,6 @@
 		'After initial bolus of Furosemide.'
 	);
 
-	$: butorphanolDose = getDrugDose(
-		'Butorphanol',
-		0.2,
-		0.3,
-		10,
-		$formValues.weight,
-		'ml',
-		'IV/IM'
-	);
 
 	$: butorphanolDoseCat = getDrugDose(
 		'Butorphanol',
@@ -42,15 +33,15 @@
 		'IV/IM'
 	);
 
-	$: nodes = [
-		{
-			id: 1,
+
+$: nodes = [
+	 	{
+	 		id: 1,
 			position: { x: 0, y: 0 },
-			data: { label: 'Initial CHF stabilisation: DOG' },
+			data: { label: 'Initial CHF stabilisation: CAT' },
 			width: 175,
 			height: 50,
-			bgColor: 'white',
-			borderRadius: 30
+			bgColor: 'white'
 		},
 
 		{
@@ -59,8 +50,7 @@
 			data: { label: 'Place in oxygen' },
 			width: 175,
 			height: 50,
-			bgColor: 'white',
-			borderRadius: 30
+			bgColor: 'white'
 		},
 		{
 			id: 3,
@@ -73,7 +63,7 @@
 		{
 			id: 4,
 			position: { x: 200, y: 75 },
-			data: { label: butorphanolDose },
+			data: { label: butorphanolDoseCat },
 			width: 175,
 			height: 50,
 			bgColor: 'white'
@@ -81,24 +71,20 @@
         {
 			id: 5,
 			position: { x: 0, y: 275 },
-			data: { label: `Pimobendan ${$formValues.weight * 0.25} mg given PO BID when able to swallow `},
+			data: { label: furosemideCri},
 			width: 175,
 			height: 75,
 			bgColor: 'white'
 		}
 	];
 
-
-
-	$: edges = [
+    	$: edges = [
 		{ id: 'e1-2', source: 1, target: 2 },
 		{ id: 'e2-3', source: 2, target: 3 },
 		{ id: 'e2-4', source: 2, target: 4, type: 'step', animate:true, noHandle:true },
         { id: '3-5', source: 3, target: 5}
 
 	];
-
-	
 </script>
 
 <Svelvet {nodes} {edges} height="370" width="400" background />

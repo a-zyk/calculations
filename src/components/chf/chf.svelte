@@ -5,7 +5,7 @@
 
 	{#if $formValues.species === 'dog'}
 		<Toggle>
-			<div slot="title">Diuretic and pimobendan therapy</div>
+			<div slot="title">Diuretic and pimobendan therapy: DOG</div>
 			<div slot="content">
 				<div>Place in oxygen</div>
 
@@ -49,7 +49,7 @@
 		>
 	{:else if $formValues.species === 'cat'}
 		<Toggle>
-			<div slot="title">Immediate therapy</div>
+			<div slot="title">Immediate therapy: CAT</div>
 			<div slot="content">
 				<div>Place in oxygen</div>
 				<div>
