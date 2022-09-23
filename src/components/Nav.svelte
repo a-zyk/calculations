@@ -2,14 +2,14 @@
 	import { page } from '$app/stores';
 
 	let navItems = [
-		{ name: 'Fluid therapy', link: '/fluids' },
-		{ name: 'Epilepsy', link: '/epilepsy' },
-		{ name: 'CHF', link: '/chf' },
 		{ name: 'ATE', link: '/ate' },
 		{ name: 'Anaphylaxis', link: '/anaphylaxis' },
 		{ name: 'Blocked cat', link: '/blockedCat' },
+		{ name: 'CHF', link: '/chf' },
+		{ name: 'Colapsed neonate', link: '/colapsedNeonate' },
+		{ name: 'Epilepsy', link: '/epilepsy' },
 		{ name: 'Eclampsia', link: '/eclampsia' },
-		{ name: 'Colapsed neonate', link: '/colapsedNeonate' }
+		{ name: 'Fluid therapy', link: '/fluids' }
 	];
 
 	const ACTIVE_CLASSES = 'border-black border-b-2 font-bold';

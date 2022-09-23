@@ -25,7 +25,7 @@
 
 	$: {
 		if (autoclosable) {
-			show = $active == id
+			show = $active == id;
 		}
 	}
 </script>

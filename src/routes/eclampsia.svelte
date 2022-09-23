@@ -1,20 +1,10 @@
 <script>
-    import Eclampsia from "../components/eclampsia/eclampsia.svelte"
-    import EclampsiaDiagram from "../components/eclampsia/eclapsiaDiagram.svelte";
-
+	import Eclampsia from '../components/eclampsia/eclampsia.svelte';
+	import EclampsiaDiagram from '../components/eclampsia/eclapsiaDiagram.svelte';
+	import Styles from '../components/styles.svelte';
 </script>
 
-
-
-
-<div class="flex gap-5 p-5">
-    <div class="w-1/2 flex flex-col gap-2">
-    <EclampsiaDiagram/>
-    </div>
-
-    <div class="w-1/2 flex flex-col gap-2">
-        <Eclampsia/>
-    </div>
-    
-</div>
-
+<Styles>
+	<div slot="flowchart"><EclampsiaDiagram /></div>
+	<div slot="description"><Eclampsia /></div>
+</Styles>

@@ -1,5 +1,7 @@
 <script>
-    import ColapsedNeonate from "../components/colapsedNeonate/ColapsedNeonate.svelte"
+	import ColapsedNeonate from '../components/colapsedNeonate/ColapsedNeonate.svelte';
 </script>
 
-<ColapsedNeonate/>
+<div class="mx-16">
+	<ColapsedNeonate />
+</div>

@@ -44,4 +44,4 @@
 ;
 </script>
 
-<Svelvet {nodes} {edges} height="380" width="400" background />
+<Svelvet {nodes} {edges} height="300" width="220" background />
