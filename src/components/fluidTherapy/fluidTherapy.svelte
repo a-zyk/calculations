@@ -11,13 +11,20 @@
 			<label for="fluid-time">Fluid therapy time, hrs</label>
 			<input id="fluid-time" type="number" placeholder="hours" bind:value={$formValues.hours} />
 		</div>
+        <label for="shocky">Animal in shock</label>
+        <input id="shocky" type="checkbox"  bind:checked={$formValues.shocky} />
+
 <div class="flex">
     <div> 
    
     <Dehydration/>
     <Maintenance/>
     <Ongoing/>
+
+    {#if $formValues.shocky }
+    <Shock/>
+{/if}
     <Total/>
     </div>
-    <Shock/>
+    
     </div>

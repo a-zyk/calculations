@@ -17,7 +17,7 @@
 		'Midazolam',
 		0.2,
 		0.3,
-		10,
+		5,
 		$formValues.weight,
 		'ml',
 		'can be given up to 3 times iv/rectaly q10min'
@@ -26,7 +26,7 @@
 		'Midazolam CRI ',
 		0.2,
 		0.5,
-		10,
+		5,
 		$formValues.weight,
 		'ml/hr',
 		'CRI after initial MDZ bolus'
@@ -57,7 +57,7 @@
 		'Phenobarbital',
 		12,
 		0,
-		130,
+		60,
 		$formValues.weight,
 		'ml',
 		'Slow IV. Wait 20min to repeat doses'
@@ -67,7 +67,7 @@
 		'Phenobarbital',
 		4,
 		8,
-		130,
+		60,
 		$formValues.weight,
 		'ml',
 		'Take blood sample before giving IV'
@@ -77,7 +77,7 @@
 		'Phenobarbital',
 		4,
 		8,
-		130,
+		60,
 		$formValues.weight,
 		'ml',
 		'2 further doses 20min apart'

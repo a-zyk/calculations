@@ -40,7 +40,7 @@
 
 		<div>
 			<label for="body-mass">Body mass, kg</label>
-			<input id="body-mass" type="number" placeholder="BW" bind:value={$formValues.weight} />
+			<input id="body-mass" type="number" min="0" placeholder="BW" bind:value={$formValues.weight} />
 		</div>
 <b>Choose species and body weight</b>
 		
