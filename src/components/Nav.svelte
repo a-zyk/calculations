@@ -41,7 +41,7 @@
 	</ul>
 </nav> -->
 
-<nav class="min-h-screen overflow-x-hidden  bg-blue-300 top-0 left-0 fixed">
+<nav class="min-h-screen overflow-x-hidden  bg-blue-300 top-0 left-0 sticky">
 	<ul class="ml-5 pt-16 ">
 		{#each navItems as navItem}
 			<li
