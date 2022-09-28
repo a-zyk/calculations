@@ -53,7 +53,7 @@
 		{/each}
 
 		<Toggle>
-			<div slot="title">Intoxication</div>
+			<div slot="title">Intoxications</div>
 			<div slot="content">
 				{#each intoxicationItems as intoxicationItem}
 					<li
