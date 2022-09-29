@@ -12,63 +12,84 @@ const deficit = (weight, dehydrationPercentage) => {
 	}
 };
 
-
 const maintenance = (weight, species) => {
-    let factor
-    if (species === "dog") {
-        factor = 132 
-    } else {
-        factor = 80
-    }
-    return (weight ** 0.75 * factor) / 24
-}
-
-const totalFluids = (rateType, maintRatesCalculation, maintenanceCalculatiom, deficit, hours, ongoing) => {
-	let baseCalculation
-
-    if (rateType === 'personalRate') {
-        baseCalculation = maintRatesCalculation
+	let factor;
+	if (species === 'dog') {
+		factor = 132;
 	} else {
-        baseCalculation = maintenanceCalculatiom
+		factor = 80;
 	}
-
-    let total = (baseCalculation + deficit / hours) * hours;
-    if (ongoing) {
-        total += ongoing
-    }
-
-    return Math.round(total)
+	return (weight ** 0.75 * factor) / 24;
 };
 
-    const totalFluidsPerHr = (rateType, maintRatesCalculation, maintenanceCalculatiom, deficit, hours, ongoing) => {
-        console.log(maintRatesCalculation)
-        let baseCalculation
+const totalFluids = (
+	rateType,
+	maintRatesCalculation,
+	maintenanceCalculatiom,
+	deficit,
+	hours,
+	ongoing,
+	shock
+) => {
+	let baseCalculation;
 
-    if (rateType === 'personalRate') {
-        baseCalculation = maintRatesCalculation
+	if (rateType === 'personalRate') {
+		baseCalculation = maintRatesCalculation;
 	} else {
-        baseCalculation = maintenanceCalculatiom
+		baseCalculation = maintenanceCalculatiom;
 	}
 
-    let total = ((baseCalculation * hours )+ deficit)
-    if (ongoing) {
-        total += ongoing 
-    } else {
-        total 
-    }
+	let total = (baseCalculation + deficit / hours) * hours;
+	if (ongoing && shock) {
+		total += ongoing;
+		total -= shock;
+	} else if (shock) {
+		total -= shock;
+	} else if (ongoing) {
+		total += ongoing;
+	}
 
+	return Math.round(total);
+};
 
-    return Math.round(total/hours)
-    } 
+const totalFluidsPerHr = (
+	rateType,
+	maintRatesCalculation,
+	maintenanceCalculatiom,
+	deficit,
+	hours,
+	ongoing,
+	shock
+) => {
+	console.log(maintRatesCalculation);
+	let baseCalculation;
 
-    const shock = (weight, species) => {
-        let dose;
-        if (species === "dog") {
-            dose = 90;
-           
-        } else {
-            dose = 30;
-        }
-        return weight * dose
-    }
-export { formValues, maintRates, deficit, maintenance, totalFluids, totalFluidsPerHr, shock};
+	if (rateType === 'personalRate') {
+		baseCalculation = maintRatesCalculation;
+	} else {
+		baseCalculation = maintenanceCalculatiom;
+	}
+
+	let total = baseCalculation * hours + deficit;
+	if (ongoing && shock) {
+		total += ongoing;
+		total -= shock;
+	} else if (shock) {
+		total -= shock;
+	} else if (ongoing) {
+		total += ongoing;
+	}
+
+	return Math.round(total / hours);
+};
+
+const shock = (weight, species) => {
+	let dose;
+	if (species === 'dog') {
+		dose = 90;
+	} else {
+		dose = 30;
+	}
+	return weight * dose;
+};
+export { formValues, maintRates, deficit, maintenance, totalFluids, totalFluidsPerHr, shock };

@@ -10,8 +10,8 @@
 	$: maintenance = maintenanceCalculation($formValues.weight, $formValues.species);
 	$: mainRates = mainRatesCalculation($formValues.maintRate, $formValues.weight);
 	$: deficit = deficitCalculation($formValues.weight, $formValues.dehydrationPercentage);
-	$: totalFluids = totalFluidsCalculation($formValues.radio, mainRates, maintenance, deficit, $formValues.hours, $formValues.ongoing)
-	$: totalFluidsPerHr = totalFluidsPerHrCalculation($formValues.radio, mainRates, maintenance, deficit, $formValues.hours, $formValues.ongoing)
+	$: totalFluids = totalFluidsCalculation($formValues.radio, mainRates, maintenance, deficit, $formValues.hours, $formValues.ongoing, $formValues.shockAmount)
+	$: totalFluidsPerHr = totalFluidsPerHrCalculation($formValues.radio, mainRates, maintenance, deficit, $formValues.hours, $formValues.ongoing, $formValues.shockAmount)
 </script>
 
 
