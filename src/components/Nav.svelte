@@ -10,7 +10,9 @@
 		{ name: 'Colapsed neonate', link: '/colapsedNeonate' },
 		{ name: 'Epilepsy', link: '/epilepsy' },
 		{ name: 'Eclampsia', link: '/eclampsia' },
-		{ name: 'Fluid therapy', link: '/fluids' }
+		{ name: 'Fluid therapy', link: '/fluids' },
+		{ name: 'Hepatic encephalopathy', link: '/hepaticEnceph' }
+
 	];
 
 	let intoxicationItems = [

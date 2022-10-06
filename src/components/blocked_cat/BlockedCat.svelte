@@ -1,6 +1,4 @@
 <script>
-	import { formValues } from '../../stores/calculations';
-	import DrugCalc from '../drugdose.svelte';
 	import Toggle from '../Toggle.svelte';
 </script>
 
@@ -111,7 +109,6 @@
 <div>
 	Source: Dr. Brooke Schampers, Inside the emergency room. 2020. New papers indicate that prazosin
 	might not be helpful: <a
-		<a
 		class="hover:text-blue-400"
 		target="_blank"
 		href="https://pubmed.ncbi.nlm.nih.gov/35290210/">Article about it.</a

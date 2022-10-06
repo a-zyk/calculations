@@ -3,7 +3,7 @@
 	import ChfDiagram from '../components/chf/chfDiagram.svelte';
 	import ChfDiagramCat from '../components/chf/chfDiagramCat.svelte';
 	import { formValues } from '../stores/calculations';
-	import Styles from '../components/styles.svelte';
+	import Styles from '../components/Styles.svelte';
 </script>
 
 <Styles>
