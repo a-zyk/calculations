@@ -5,11 +5,11 @@
 </script>
 
 <div class="flex">
-	<div class="w-1/6 relative">
+	<div class="lg:w-1/6 relative">
 		<Nav />
 	</div>
 
-	<div class="flex flex-col w-5/6">
+	<div class="flex flex-col w-full lg:w-5/6">
 		<BaseInfo />
 		<slot />
 	</div>

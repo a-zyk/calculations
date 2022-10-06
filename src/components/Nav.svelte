@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import Toggle from './Toggle.svelte';
-
+	import { active } from '../stores/navToggle';
 	let navItems = [
 		{ name: 'ATE', link: '/ate' },
 		{ name: 'Anaphylaxis', link: '/anaphylaxis' },
@@ -12,7 +12,6 @@
 		{ name: 'Eclampsia', link: '/eclampsia' },
 		{ name: 'Fluid therapy', link: '/fluids' },
 		{ name: 'Hepatic encephalopathy', link: '/hepaticEnceph' }
-
 	];
 
 	let intoxicationItems = [
@@ -43,11 +42,15 @@
 	</ul>
 </nav> -->
 
-<nav class="min-h-screen overflow-x-hidden  bg-blue-300 top-0 left-0 sticky">
-	<ul class="ml-5 pt-16 ">
+<nav
+	class="min-h-screen overflow-x-hidden bg-blue-300 top-0 left-0 sticky {$active
+		? 'flex'
+		: 'hidden'} lg:flex "
+>
+	<ul class="ml-4 pt-16 ">
 		{#each navItems as navItem}
 			<li
-				class="py-3 text-black cursor-pointer text-xl font-bold px-3 pt-3 items-center
+				class="py-3 text-black cursor-pointer text-lg font-bold px-3 pt-3 items-center
 				{$page.url.pathname == navItem.link ? ACTIVE_CLASSES : ''}"
 			>
 				<a href={navItem.link}>{navItem.name}</a>
@@ -59,7 +62,9 @@
 			<div slot="content">
 				{#each intoxicationItems as intoxicationItem}
 					<li
-						class="py-3 text-black {$page.url.pathname == intoxicationItem.link ? ACTIVE_CLASSES : ''}"
+						class="py-3 text-black {$page.url.pathname == intoxicationItem.link
+							? ACTIVE_CLASSES
+							: ''}"
 					>
 						<a href={intoxicationItem.link}>{intoxicationItem.name}</a>
 					</li>
