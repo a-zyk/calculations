@@ -29,18 +29,12 @@
 		{ name: 'Xylitol', link: '/xylitol' }
 	];
 
+	$: {
+		$page.url.pathname;
+		$active = false;
+	}
 	const ACTIVE_CLASSES = 'border-black border-b-2 font-bold';
 </script>
-
-<!-- <nav class="mb-2">
-	<ul class="flex-col items-center md:flex-row flex justify-evenly">
-		{#each navItems as navItem}
-			<li class="py-3 text-black {$page.url.pathname == navItem.link ? ACTIVE_CLASSES : ''}">
-				<a href={navItem.link}>{navItem.name}</a>
-			</li>
-		{/each}
-	</ul>
-</nav> -->
 
 <nav
 	class="min-h-screen overflow-x-hidden bg-blue-300 top-0 left-0 sticky {$active
