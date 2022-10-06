@@ -14,7 +14,7 @@
 	{/if} flowchart
 </button>
 
-<div class="flex flex-col  lg:flex-row gap-5 {visible ? 'mr-10' : 'mx-16' } ">
+<div class="flex flex-col  lg:flex-row gap-5 {visible ? 'mr-10' : 'mx-4 md:mx-16' } ">
 	{#if visible}
 		<div class="w-full items-center lg:w-1/2 ml-2 flex flex-col gap-2">
 			<slot name="flowchart" />

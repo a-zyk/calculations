@@ -2,6 +2,6 @@
 	import ColapsedNeonate from '../components/colapsedNeonate/ColapsedNeonate.svelte';
 </script>
 
-<div class="mx-16">
+<div class="mx-4 md:mx-16">
 	<ColapsedNeonate />
 </div>
