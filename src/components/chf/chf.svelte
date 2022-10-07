@@ -1,11 +1,10 @@
 <script>
 	import Toggle from '../Toggle.svelte';
-	import { formValues } from '../../stores/calculations';
+
 </script>
 
-	{#if $formValues.species === 'dog'}
 		<Toggle>
-			<div slot="title">Diuretic and pimobendan therapy: DOG</div>
+			<div slot="title">Imidiate therapy: DOG</div>
 			<div slot="content">
 				<div>Place in oxygen</div>
 
@@ -38,7 +37,7 @@
 		</Toggle>
 
 		<Toggle>
-			<div slot="title">Sedation/anxiolytics</div>
+			<div slot="title">Sedation/anxiolytics: DOG</div>
 			<div slot="content">
 				<div>
 					If nervous <span class="font-bold">Butorphanol 0.2 to 0.3 mg/kg</span> administered IM or IV.
@@ -47,7 +46,7 @@
 				</div>
 			</div></Toggle
 		>
-	{:else if $formValues.species === 'cat'}
+	
 		<Toggle>
 			<div slot="title">Immediate therapy: CAT</div>
 			<div slot="content">
@@ -60,14 +59,14 @@
 			</div>
 		</Toggle>
 		<Toggle>
-			<div slot="title">Sedation</div>
+			<div slot="title">Sedation/anxiolytics: CAT</div>
 			<div slot="content">
 				Sedation if nervous <span class="font-bold">butorphanol 0.1-0.2mg/kg</span> IV or IM +
 				<span class="font-bold">Midazolam 0.1 mg/kg</span>. If very fractious and needs invasive
 				procedure ketamine 0.1ml/PER CAT IV or 0.2-0.3ml/PER CAT IM.
 			</div>
 		</Toggle>
-	{/if}
+	
 
 	<div class="text-sm">
 		Source:

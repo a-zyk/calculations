@@ -5,23 +5,21 @@
 	import Total from './Total.svelte';
 	import Shock from './Shock.svelte';
 	import { formValues } from '../../stores/calculations';
+	import BaseInfo from '../BaseInfo.svelte';
+	import FluidTherapyTime from './fluidTherapyTime.svelte';
 </script>
 
-<div class="m-auto">
 <div>
-	<label for="fluid-time">Fluid therapy time, hrs</label>
-	<input id="fluid-time" type="number" placeholder="hours" bind:value={$formValues.hours} />
-</div>
+	
+	<BaseInfo />
 
-<div>
-	<label for="shocky">Animal in shock</label>
-	<input id="shocky" type="checkbox" bind:checked={$formValues.shocky} />
-</div>
+	<FluidTherapyTime/>
+	
 
-<div class="flex">
 	<div>
 		<Dehydration />
 		<Maintenance />
+
 		<Ongoing />
 
 		{#if $formValues.shocky}
@@ -29,5 +27,4 @@
 		{/if}
 		<Total />
 	</div>
-</div>
 </div>

@@ -1,7 +1,7 @@
 <script>
 	import '../app.css';
 	import Nav from '../components/Nav.svelte';
-	import BaseInfo from '../components/BaseInfo.svelte';
+	import Header from '../components/Header.svelte';
 </script>
 
 <div class="flex">
@@ -10,7 +10,7 @@
 	</div>
 
 	<div class="flex flex-col w-full lg:w-5/6">
-		<BaseInfo />
+		<Header/>
 		<slot />
 	</div>
 </div>

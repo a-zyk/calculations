@@ -43,11 +43,12 @@
 >
 	<ul class="ml-4 pt-16 ">
 		{#each navItems as navItem}
-			<li
-				class="py-3 text-black cursor-pointer text-lg font-bold px-3 pt-3 items-center
+			<li>
+				<a
+					class="flex py-3 text-black cursor-pointer text-lg font-bold px-3 pt-3 items-center
 				{$page.url.pathname == navItem.link ? ACTIVE_CLASSES : ''}"
-			>
-				<a href={navItem.link}>{navItem.name}</a>
+					href={navItem.link}>{navItem.name}</a
+				>
 			</li>
 		{/each}
 
@@ -55,12 +56,13 @@
 			<div slot="title">Intoxications</div>
 			<div slot="content">
 				{#each intoxicationItems as intoxicationItem}
-					<li
-						class="py-3 text-black {$page.url.pathname == intoxicationItem.link
-							? ACTIVE_CLASSES
-							: ''}"
-					>
-						<a href={intoxicationItem.link}>{intoxicationItem.name}</a>
+					<li>
+						<a
+							class="flex py-3 text-black {$page.url.pathname == intoxicationItem.link
+								? ACTIVE_CLASSES
+								: ''}"
+							href={intoxicationItem.link}>{intoxicationItem.name}</a
+						>
 					</li>
 				{/each}
 			</div>
