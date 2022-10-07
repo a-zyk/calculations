@@ -6,7 +6,7 @@
 		'Furosemide',
 		1,
 		2,
-		40,
+		50,
 		$formValues.weight,
 		'ml',
 		'IV/IM. Then boluses every 1-8 hours until resp rate <60'
@@ -16,7 +16,7 @@
 		'Furosemide Cri',
 		0.66,
 		0,
-		40,
+		50,
 		$formValues.weight,
 		'ml/hr',
 		'After initial bolus of Furosemide.'

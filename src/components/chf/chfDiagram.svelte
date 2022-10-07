@@ -6,7 +6,7 @@
 		'Furosemide',
 		1,
 		2,
-		40,
+		50,
 		$formValues.weight,
 		'ml',
 		'IV/IM. Then boluses every 1-8 hours until resp rate <60'
