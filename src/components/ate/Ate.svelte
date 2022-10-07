@@ -11,7 +11,7 @@
 				Analgesia is a priority for management of acute ATE in the first 24 hours, and treatment
 				with a mu opioid agonist such as fentanyl, hydromorphone, or methadone is recommended
 				<span class="font-bold"
-					>Methadone 0,2mg/kg iv or Buprenorphine 0.02–0.03 mg/kg i.v., i.m., sc q6h.</span
+					>Methadone 0,2mg/kg iv or Buprenorphine 0.02 mg/kg i.v., i.m., sc q6h.</span
 				> Also well tolerated and effective when given oral transmucosally.
 			</div>
 		</Toggle>

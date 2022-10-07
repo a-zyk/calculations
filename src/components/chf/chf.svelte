@@ -72,7 +72,7 @@
 		Source:
 		<a
 			class="hover:text-blue-400"
-			link="_blank"
+			target="_blank"
 			href="https://onlinelibrary.wiley.com/doi/full/10.1111/jvim.15488">ACVIM guidelines</a
 		>, BSAVA drug manual, Update in the management of heart failure: focus on treatment Terri
 		DeFrancesco, DVM, DACVIM (Cardiology)

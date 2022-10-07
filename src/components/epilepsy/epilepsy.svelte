@@ -121,7 +121,7 @@
 			<div class="text-sm">
 				Source: BSAVA drug manual, <a
 					class="hover:text-blue-400"
-					link="_blank"
+					target="_blank"
 					href="https://bmcvetres.biomedcentral.com/articles/10.1186/s12917-021-02805-0"
 					>First-line management of canine status epilepticus at home and in hospital-opportunities
 					and limitations of the various administration routes of benzodiazepines</a
