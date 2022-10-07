@@ -37,7 +37,7 @@
 </script>
 
 <nav
-	class="min-h-screen overflow-x-hidden bg-blue-300 top-0 left-0 sticky {$active
+	class="min-h-screen overflow-x-hidden border-r-2 top-0 left-0 sticky {$active
 		? 'flex'
 		: 'hidden'} lg:flex "
 >
