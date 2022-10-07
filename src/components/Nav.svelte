@@ -3,7 +3,7 @@
 	import Toggle from './Toggle.svelte';
 	import { active } from '../stores/navToggle';
 	let navItems = [
-		{ name: 'ATE', link: '/ate' },
+		{ name: 'ATE', link: '/' },
 		{ name: 'Anaphylaxis', link: '/anaphylaxis' },
 		{ name: 'Blocked cat', link: '/blockedCat' },
 		{ name: 'CHF', link: '/chf' },
