@@ -119,4 +119,4 @@
 			</div>
 		</Toggle>
 
-		<div>Source: Fading puppy syndrome- VINcyclopedia (Associate) - Canine, March 2021. Kari Rothrock</div>
+		<div class="mt-4 text-sm">Source: Fading puppy syndrome- VINcyclopedia (Associate) - Canine, March 2021. Kari Rothrock</div>

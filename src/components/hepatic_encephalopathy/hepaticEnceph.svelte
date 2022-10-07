@@ -139,7 +139,7 @@
 		</div>
 	</div>
 </Toggle>
-<div>
+<div class="mt-4 text-sm">
 	Source: Hepatic encephalopathy- VINcyclopedia Linda Shell DVM, DACVIM (Neurology) and Mark Rishniw
 	BVSc, DACVIM (SAIM & Cardiology)
 </div>

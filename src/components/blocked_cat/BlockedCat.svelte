@@ -106,7 +106,7 @@
 		</div>
 	</div>
 </Toggle>
-<div>
+<div class="mt-4 text-sm">
 	Source: Dr. Brooke Schampers, Inside the emergency room. 2020. New papers indicate that prazosin
 	might not be helpful: <a
 		class="hover:text-blue-400"

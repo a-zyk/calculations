@@ -58,7 +58,7 @@
 
 
 
-<div>
+<div class="mt-4 text-sm">
 	Source: Eclampsia- VINcyclopedia (Associate) - Canine, November 2020. Kari Rothrock, Jacqueline
 	Brister
 </div>

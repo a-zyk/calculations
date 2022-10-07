@@ -68,7 +68,7 @@
 		</Toggle>
 	
 
-	<div class="text-sm">
+	<div class="mt-4 text-sm">
 		Source:
 		<a
 			class="hover:text-blue-400"
