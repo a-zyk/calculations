@@ -46,23 +46,27 @@
 	<div slot="title">Medical therapy</div>
 	<div slot="content">
 		<div>
-			Antibiotics: Oral antibiotics can be administered to alert patients to decrease the number of
-			urease-producing bacteria in the GI tract. Antibiotics can also decrease bacterial deamination
-			of amino acids and reduce bacterial production of aromatic amino acids, mercaptans, and false
-			neurotransmitters. Metronidazole (7.5 mg/kg PO q 12 hrs) and amoxicillin (12.5-25 mg/kg PO q
-			8-12 hrs) are frequently given. Metronidazole is metabolized by the liver and can potentially
-			cause clinical signs that mimic HE, although this adverse effect is less common at lower
-			doses. Neomycin was once used but is no longer recommended as it can be absorbed systemically
-			and cause nephrotoxicity.
+			<span class="font-bold">Antibiotics</span>: Oral antibiotics can be administered to alert
+			patients to decrease the number of urease-producing bacteria in the GI tract. Antibiotics can
+			also decrease bacterial deamination of amino acids and reduce bacterial production of aromatic
+			amino acids, mercaptans, and false neurotransmitters.
+			<span class="font-bold">
+				Metronidazole (7.5 mg/kg PO q 12 hrs) and amoxicillin (12.5-25 mg/kg PO q 8-12 hrs)
+			</span> are frequently given. Metronidazole is metabolized by the liver and can potentially cause
+			clinical signs that mimic HE, although this adverse effect is less common at lower doses. Neomycin
+			was once used but is no longer recommended as it can be absorbed systemically and cause nephrotoxicity.
 		</div>
 		<div>
-			Laxatives:<span class="font-bold"> Lactulose</span> is a nonabsorbable, oral disaccharide that
-			is the treatment of choice for HE associated with chronic liver disease. It is broken down by
-			colonic bacteria into short chain fatty acids, which lowers colonic pH. The lower pH traps
-			soluble NH3 (ammonia) as NH4+ (ammonium ion). Because ammonium is a less diffusible molecule
-			than ammonia, it remains in the colon and is excreted in the feces. Lactulose also decreases
-			stool transit time and reduces production of ammonia by bacteria.<span class="font-bold">
-				Dosage varies from 0.5-5 mL/kg PO q 8 hrs</span
+			<span class="font-bold">Laxatives</span>:<span class="font-bold"> Lactulose</span> is a
+			nonabsorbable, oral disaccharide that is the treatment of choice for HE associated with
+			chronic liver disease. It is broken down by colonic bacteria into short chain fatty acids,
+			which lowers colonic pH. The lower pH traps soluble NH3 (ammonia) as NH4+ (ammonium ion).
+			Because ammonium is a less diffusible molecule than ammonia, it remains in the colon and is
+			excreted in the feces. Lactulose also decreases stool transit time and reduces production of
+			ammonia by bacteria.<span class="font-bold">
+				Dosage varies from 0.5-5 mL/kg PO q 8 hrs (<span class="font-bold"
+					>lactulose /oral : 5 – 15ml dog TID, 0.25 – 1ml cat TID</span
+				>)</span
 			>. Adjust the dose to result in the passage of 2-3 soft stools daily. Lactulose can also be
 			given rectally (20 mL/kg of a 30:70 lactulose:water mixture up to q 6 hrs).
 		</div>
@@ -86,49 +90,52 @@
 	<div slot="title">Investigation</div>
 	<div slot="content">
 		<div>
-			Complete Blood Count (CBC): CBC abnormalities may include microcytosis, anemia, and changes in
-			red blood cell morphology (e.g. target cells, acanthocytes, poikilocytes).
+			<span class="font-bold">Complete Blood Count (CBC)</span>: ↓ MCV, mild nonregenerative
+			normochromic anemia and changes in red blood cell morphology (e.g. target cells, acanthocytes,
+			poikilocytes).
 		</div>
 		<div>
-			Biochemistry Profile: Changes reflect underlying liver insufficiency or disease. ALT, AST,
-			GGT, and ALP may be increased but enzyme levels can also be normal. Other possible
-			abnormalities include hyperbilirubinemia, azotemia, hypoalbuminemia, hypoglycemia,
-			hypocholesterolemia, hypoglobulinemia, hypokalemia, hyponatremia, and low BUN.
+			<span class="font-bold">Biochemistry Profile</span>: ↓ albumin, ↓ BUN, ↓ Cl, ↓Na, ↓K,
+			hypoglycemia, hypocholesterolemia liver enzymes elevation /absent or mild with CPSS/,
+			hyperbilirubinemia.
 		</div>
 		<div>
-			Urinalysis: Ammonium urate crystals may be seen on sediment evaluation. Other abnormalities
-			may include low specific gravity, hematuria, proteinuria, pyuria, and bilirubinuria.
+			<span class="font-bold">Urinalysis</span>: Ammonium urate crystals may be seen on sediment
+			evaluation. Other abnormalities may include low specific gravity, hematuria, proteinuria,
+			pyuria, and bilirubinuria.
 		</div>
 		<div>
-			Bile Acid Assays: Fasting and post-prandial bile acid levels are usually elevated in cases of
-			hepatic insufficiency and toxicosis.
+			<span class="font-bold">Bile Acid Assays</span>: Fasting and post-prandial bile acid levels
+			are usually elevated in cases of hepatic insufficiency and toxicosis. Be aware that if dog is
+			icteric bile acids are not relieble as will be high always.
 		</div>
 		<div>
-			Coagulation Tests: Prolonged prothrombin (PT) and partial thromboplastin (PTT) times can occur
-			with severe hepatic dysfunction.
+			<span class="font-bold">Coagulation Tests</span>: Prolonged prothrombin (PT) and partial
+			thromboplastin (PTT) times can occur with severe hepatic dysfunction.
 		</div>
 		<div>
-			Ammonia Measurement: Serum/plasma ammonia may be elevated; however, marked signs of HE can be
-			present even with normal blood ammonia levels. In one study of 118 dogs with HE, severity did
-			not significantly correlate with plasma ammonia concentrations.12 Note that appropriate sample
-			handing is critical when measuring plasma ammonia, as it is a labile substance. In-house, dry
-			chemistry analyzers or point-of-care ammonia analyzers can be used. In one study, the latter
-			was found to be suitable for dogs and cats, while the former reliably agreed with reference
-			lab analyzers only at higher ammonia levels.
+			<span class="font-bold">Ammonia Measurement</span>: Serum/plasma ammonia may be elevated;
+			however, marked signs of HE can be present even with normal blood ammonia levels. In one study
+			of 118 dogs with HE, severity did not significantly correlate with plasma ammonia
+			concentrations.12 Note that appropriate sample handing is critical when measuring plasma
+			ammonia, as it is a labile substance. In-house, dry chemistry analyzers or point-of-care
+			ammonia analyzers can be used. In one study, the latter was found to be suitable for dogs and
+			cats, while the former reliably agreed with reference lab analyzers only at higher ammonia
+			levels.
 		</div>
-		<div>Manganese Measurement: Concentration of manganese in whole blood may be increased.</div>
 		<div>
-			Radiography: Patients with PSS may have microhepatica. Other notable abnormalities include
+			<span class="font-bold">Radiography</span>: Patients with
+			<span class="font-bold">PSS may have microhepatica</span>. Other notable abnormalities include
 			hepatomegaly, splenomegaly, mass effects, and biliary tract mineralization.
 		</div>
 		<div>
-			Ultrasonography: Depending upon the expertise of the ultrasonographer, large PSS or
-			arteriovenous fistulae may be detected occasionally. Other findings may include hepatomegaly,
-			hepatic or biliary mass(es), ascites, mesenteric lymphadenopathy, splenomegaly, and
-			mineralization of the biliary tract. The liver may contain hypo- or hyperechoic lesions, or it
-			may have a mixed echogenicity pattern, depending upon the underlying pathology.
-			Transcranial Doppler ultrasonography may be useful for monitoring the status of intracranial
-			hypertension.
+			<span class="font-bold">Ultrasonography</span>: Depending upon the expertise of the
+			ultrasonographer, large PSS or arteriovenous fistulae may be detected occasionally. Other
+			findings may include hepatomegaly, hepatic or biliary mass(es), ascites, mesenteric
+			lymphadenopathy, splenomegaly, and mineralization of the biliary tract. The liver may contain
+			hypo- or hyperechoic lesions, or it may have a mixed echogenicity pattern, depending upon the
+			underlying pathology. Transcranial Doppler ultrasonography may be useful for monitoring the
+			status of intracranial hypertension.
 		</div>
 	</div>
 </Toggle>
