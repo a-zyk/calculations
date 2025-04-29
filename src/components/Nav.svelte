@@ -33,39 +33,40 @@
 		$page.url.pathname;
 		$active = false;
 	}
-	const ACTIVE_CLASSES = 'border-black border-b-2 font-bold';
 </script>
 
 <nav
-	class="min-h-screen overflow-x-hidden border-r-2 top-0 left-0 sticky {$active
+	class="min-h-screen bg-white border-r border-gray-200 top-0 left-0 sticky {$active
 		? 'flex'
-		: 'hidden'} lg:flex "
+		: 'hidden'} lg:flex flex-col"
 >
-	<ul class="ml-4 pt-16 ">
-		{#each navItems as navItem}
-			<li>
-				<a
-					class="flex py-3 text-black cursor-pointer text-lg font-bold px-3 pt-3 items-center
-				{$page.url.pathname == navItem.link ? ACTIVE_CLASSES : ''}"
-					href={navItem.link}>{navItem.name}</a
-				>
-			</li>
-		{/each}
+	<div class="p-6">
+		<h2 class="text-xl font-bold text-gray-800 mb-6">Emergency Calculator</h2>
+		<ul class="space-y-2">
+			{#each navItems as navItem}
+				<li>
+					<a
+						class="nav-link block py-2 px-4 rounded-md {$page.url.pathname == navItem.link ? 'nav-link-active' : ''}"
+						href={navItem.link}>{navItem.name}</a
+					>
+				</li>
+			{/each}
+		</ul>
+	</div>
 
+	<div class="px-6">
 		<Toggle>
-			<div slot="title">Intoxications</div>
-			<div slot="content">
+			<div slot="title" class="text-lg font-semibold text-gray-800">Intoxications</div>
+			<div slot="content" class="mt-2 space-y-1">
 				{#each intoxicationItems as intoxicationItem}
-					<li>
-						<a
-							class="flex py-3 text-black {$page.url.pathname == intoxicationItem.link
-								? ACTIVE_CLASSES
-								: ''}"
-							href={intoxicationItem.link}>{intoxicationItem.name}</a
-						>
-					</li>
+					<a
+						class="nav-link block py-2 px-4 rounded-md text-sm {$page.url.pathname == intoxicationItem.link
+							? 'nav-link-active'
+							: ''}"
+						href={intoxicationItem.link}>{intoxicationItem.name}</a
+					>
 				{/each}
 			</div>
 		</Toggle>
-	</ul>
+	</div>
 </nav>
